@@ -1,0 +1,13 @@
+<p>cart-list works!</p>
+<h3>Cart List</h3>
+@if (cartItems.length === 0) {
+  <p>Your cart is empty.</p>
+} @else {
+  <p>You have {{ cartItems.length }} item(s) in your cart.</p>
+}
+<ul>
+
+  @for (item of cartItems; track item.id) {
+    <li>{{ item.name }} - {{ item.price | currency }}</li>
+  }
+</ul>

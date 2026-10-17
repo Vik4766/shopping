@@ -1,0 +1,8 @@
+<p>product-list-component works!</p>
+<app-product-component></app-product-component>
+<h2>Product List</h2>
+<ul>
+  @for (product of products; track product.id) {
+    <li>{{ product.name }} - {{ product.price | currency }}</li>
+  }
+</ul>

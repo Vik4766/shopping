@@ -1,0 +1,11 @@
+<p>first-component works!</p>
+<p>Name: {{ name }}</p>
+<p>Description:</p>
+<ul>
+  @for (desc of description; track desc) {
+    <li>{{ desc }}</li>
+  }
+</ul>
+<p>Price: {{ price | currency }}</p>
+<p>Category: {{ category }}</p>
+<p>Availability: {{ isAvailable ? 'In Stock' : 'Out of Stock' }}</p>
