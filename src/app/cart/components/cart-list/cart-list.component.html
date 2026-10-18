@@ -8,6 +8,6 @@
 <ul>
 
   @for (item of cartItems; track item.id) {
-    <li>{{ item.name }} - {{ item.price | currency }}</li>
+    <li>{{ item.name }} - {{ item.price | currency }} - Quantity: {{ item.quantity }}</li>
   }
 </ul>

@@ -1,8 +1,8 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { ProductComponent } from '../product-component/product-component';
-import { ProductsService } from '../products-service';
-import { ProductModel } from '../product-model';
+import { ProductsService } from '../../services/products-service';
+import { ProductModel } from '../../models/product-model';
 
 @Component({
   imports: [CurrencyPipe, ProductComponent],

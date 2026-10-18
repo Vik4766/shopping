@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
-import { CartService } from '../cart-service';
-import { ProductModel } from '../product-model';
+import { CartService } from '../../services/cart-service';
 import { CurrencyPipe } from '@angular/common';
+import { CartModel } from '../../models/cart-model';
 
 @Component({
   imports: [CurrencyPipe],
@@ -10,7 +10,7 @@ import { CurrencyPipe } from '@angular/common';
   templateUrl: './cart-list.component.html',
 })
 export class CartListComponent {
-  cartItems!: ProductModel[];
+  cartItems!: CartModel[];
 
   cartService = inject(CartService);
 
